@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="GL1" projectFiles="true">
+        <itemPath>GL1/HelloWorldGL1.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="GL2" projectFiles="true">
+        <itemPath>GL2/Practika1GL2.cpp</itemPath>
+        <itemPath>GL2/Practika2GL2.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="GL3" projectFiles="true">
+        <itemPath>GL3/Practika1GL3.cpp</itemPath>
+        <itemPath>GL3/Practika2GL3.cpp</itemPath>
+        <itemPath>GL3/Practika3GL3.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="GL4" projectFiles="true">
+        <itemPath>GL4/Practika1GL4.cpp</itemPath>
+        <itemPath>GL4/Practika2GL4.cpp</itemPath>
+        <itemPath>GL4/Practika3GL4.cpp</itemPath>
+        <itemPath>GL4/Practika4GL4.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="GL5" projectFiles="true">
+        <itemPath>GL5/Practika1GL5.cpp</itemPath>
+        <itemPath>GL5/Practika2GL5.cpp</itemPath>
+        <itemPath>GL5/Practika3GL5.cpp</itemPath>
+        <itemPath>GL5/Practika4GL5.cpp</itemPath>
+        <itemPath>GL5/Practika6GL5.cpp</itemPath>
+        <itemPath>GL5/Practika7GL5.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>Cygwin_4.x|Cygwin_4.x</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <architecture>2</architecture>
+          <warningLevel>2</warningLevel>
+        </cTool>
+        <ccTool>
+          <architecture>2</architecture>
+          <standard>8</standard>
+          <warningLevel>2</warningLevel>
+        </ccTool>
+      </compileType>
+      <item path="GL1/HelloWorldGL1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL2/Practika1GL2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL2/Practika2GL2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL3/Practika1GL3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL3/Practika2GL3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL3/Practika3GL3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika1GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika2GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika3GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika4GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika1GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika2GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika3GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika4GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika6GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika7GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="GL1/HelloWorldGL1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL2/Practika1GL2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL2/Practika2GL2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL3/Practika1GL3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL3/Practika2GL3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL3/Practika3GL3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika1GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika2GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika3GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL4/Practika4GL4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika1GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika2GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika3GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika4GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika6GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GL5/Practika7GL5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
