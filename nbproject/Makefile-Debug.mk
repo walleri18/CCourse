@@ -71,91 +71,91 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c__course.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libC__Course.${CND_DLIB_EXT}
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c__course.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libC__Course.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c__course ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libC__Course.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared
 
 ${OBJECTDIR}/GL1/HelloWorldGL1.o: nbproject/Makefile-${CND_CONF}.mk GL1/HelloWorldGL1.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL1
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL1/HelloWorldGL1.o GL1/HelloWorldGL1.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL1/HelloWorldGL1.o GL1/HelloWorldGL1.cpp
 
 ${OBJECTDIR}/GL2/Practika1GL2.o: nbproject/Makefile-${CND_CONF}.mk GL2/Practika1GL2.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL2
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL2/Practika1GL2.o GL2/Practika1GL2.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL2/Practika1GL2.o GL2/Practika1GL2.cpp
 
 ${OBJECTDIR}/GL2/Practika2GL2.o: nbproject/Makefile-${CND_CONF}.mk GL2/Practika2GL2.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL2
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL2/Practika2GL2.o GL2/Practika2GL2.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL2/Practika2GL2.o GL2/Practika2GL2.cpp
 
 ${OBJECTDIR}/GL3/Practika1GL3.o: nbproject/Makefile-${CND_CONF}.mk GL3/Practika1GL3.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL3/Practika1GL3.o GL3/Practika1GL3.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL3/Practika1GL3.o GL3/Practika1GL3.cpp
 
 ${OBJECTDIR}/GL3/Practika2GL3.o: nbproject/Makefile-${CND_CONF}.mk GL3/Practika2GL3.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL3/Practika2GL3.o GL3/Practika2GL3.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL3/Practika2GL3.o GL3/Practika2GL3.cpp
 
 ${OBJECTDIR}/GL3/Practika3GL3.o: nbproject/Makefile-${CND_CONF}.mk GL3/Practika3GL3.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL3/Practika3GL3.o GL3/Practika3GL3.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL3/Practika3GL3.o GL3/Practika3GL3.cpp
 
 ${OBJECTDIR}/GL4/Practika1GL4.o: nbproject/Makefile-${CND_CONF}.mk GL4/Practika1GL4.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL4
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika1GL4.o GL4/Practika1GL4.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika1GL4.o GL4/Practika1GL4.cpp
 
 ${OBJECTDIR}/GL4/Practika2GL4.o: nbproject/Makefile-${CND_CONF}.mk GL4/Practika2GL4.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL4
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika2GL4.o GL4/Practika2GL4.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika2GL4.o GL4/Practika2GL4.cpp
 
 ${OBJECTDIR}/GL4/Practika3GL4.o: nbproject/Makefile-${CND_CONF}.mk GL4/Practika3GL4.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL4
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika3GL4.o GL4/Practika3GL4.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika3GL4.o GL4/Practika3GL4.cpp
 
 ${OBJECTDIR}/GL4/Practika4GL4.o: nbproject/Makefile-${CND_CONF}.mk GL4/Practika4GL4.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL4
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika4GL4.o GL4/Practika4GL4.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL4/Practika4GL4.o GL4/Practika4GL4.cpp
 
 ${OBJECTDIR}/GL5/Practika1GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika1GL5.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL5
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika1GL5.o GL5/Practika1GL5.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika1GL5.o GL5/Practika1GL5.cpp
 
 ${OBJECTDIR}/GL5/Practika2GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika2GL5.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL5
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika2GL5.o GL5/Practika2GL5.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika2GL5.o GL5/Practika2GL5.cpp
 
 ${OBJECTDIR}/GL5/Practika3GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika3GL5.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL5
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika3GL5.o GL5/Practika3GL5.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika3GL5.o GL5/Practika3GL5.cpp
 
 ${OBJECTDIR}/GL5/Practika4GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika4GL5.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL5
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika4GL5.o GL5/Practika4GL5.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika4GL5.o GL5/Practika4GL5.cpp
 
 ${OBJECTDIR}/GL5/Practika6GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika6GL5.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL5
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika6GL5.o GL5/Practika6GL5.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika6GL5.o GL5/Practika6GL5.cpp
 
 ${OBJECTDIR}/GL5/Practika7GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika7GL5.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL5
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika7GL5.o GL5/Practika7GL5.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika7GL5.o GL5/Practika7GL5.cpp
 
 # Subprojects
 .build-subprojects:
@@ -163,7 +163,7 @@ ${OBJECTDIR}/GL5/Practika7GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika7
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c__course.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libC__Course.${CND_DLIB_EXT}
 
 # Subprojects
 .clean-subprojects:
