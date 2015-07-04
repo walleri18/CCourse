@@ -30,8 +30,8 @@
         <itemPath>GL5/Practika6GL5.cpp</itemPath>
         <itemPath>GL5/Practika7GL5.cpp</itemPath>
       </logicalFolder>
-      <logicalFolder name="f6" displayName="GL7" projectFiles="true">
-        <itemPath>Practika1GL7.cpp</itemPath>
+      <logicalFolder name="f6" displayName="GL6" projectFiles="true">
+        <itemPath>GL7/Practika1GL6.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
@@ -105,62 +105,7 @@
       </item>
       <item path="GL5/Practika7GL5.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Practika1GL7.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-    </conf>
-    <conf name="Release" type="2">
-      <toolsSet>
-        <compilerSet>default</compilerSet>
-        <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>true</rebuildPropChanged>
-      </toolsSet>
-      <compileType>
-        <cTool>
-          <developmentMode>5</developmentMode>
-        </cTool>
-        <ccTool>
-          <developmentMode>5</developmentMode>
-        </ccTool>
-        <fortranCompilerTool>
-          <developmentMode>5</developmentMode>
-        </fortranCompilerTool>
-        <asmTool>
-          <developmentMode>5</developmentMode>
-        </asmTool>
-      </compileType>
-      <item path="GL1/HelloWorldGL1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL2/Practika1GL2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL2/Practika2GL2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL3/Practika1GL3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL3/Practika2GL3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL3/Practika3GL3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL4/Practika1GL4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL4/Practika2GL4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL4/Practika3GL4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL4/Practika4GL4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL5/Practika1GL5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL5/Practika2GL5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL5/Practika3GL5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL5/Practika4GL5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL5/Practika6GL5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL5/Practika7GL5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Practika1GL7.cpp" ex="false" tool="1" flavor2="0">
+      <item path="GL7/Practika1GL6.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
