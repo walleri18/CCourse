@@ -8,7 +8,8 @@
 //#include <cstdlib>
 //#include <iostream>
 //
-//using namespace std;
+//using namespace std
+//
 //void spisok();
 //void list(int n);
 //
