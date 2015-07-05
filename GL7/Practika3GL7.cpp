@@ -10,50 +10,63 @@
 
 using namespace std;
 
-enum Board
+struct Board
 {
-    pusto = 0, //переменная для обозначения пустоты в клетки
-    nolik = 1, //переменная для обозначения присутствия нолика в клетке
-    krestik = 2 //переменная для обозначения присутствия крестика в клетке
+	char pusto = '_'; //переменная для обозначения пустоты в клетки
+	char nolik = '0'; //переменная для обозначения присутствия нолика в клетке
+	char krestik = 'x'; //переменная для обозначения присутствия крестика в клетке
 };
 
-enum Doska
+struct Doska
 {
-    kletka1 = Board.pusto,
-    kletka2 = Board.pusto,
-    kletka3 = Board.pusto,
-    kletka4 = Board.pusto,
-    kletka5 = Board.pusto,
-    kletka6 = Board.pusto,
-    kletka7 = Board.pusto,
-    kletka8 = Board.pusto,
-    kletka9 = Board.pusto
+	char kletka1 = '_';
+	char kletka2 = '_';
+	char kletka3 = '_';
+	char kletka4 = '_';
+	char kletka5 = '_';
+	char kletka6 = '_';
+	char kletka7 = '_';
+	char kletka8 = '_';
+	char kletka9 = '_';
 };
 
-enum Player
+struct Player
 {
-    fisrt = 0,
-    second = 0
+	char fisrt = ' ';
+	char second = ' ';
 };
 
-void BoardList();
+void BoardList(Doska doska);
 
 int main()
 {
-    cout << "Добро пожаловать в игру крестики нолики для двух игроков!!!" << endl;
-    
-    BoardList();
-    
-    
-    
-    
-    return 0;
+	setlocale(0, "");
+
+	Board board;
+	Doska doska;
+	Player player;
+
+	cout << "Добро пожаловать в игру крестики нолики для двух игроков!!!" << endl;
+	BoardList(doska);
+	cout << "Первый игрок, чем вы будите ходить? ";
+	cin >> player.fisrt;
+	if (player.fisrt == board.krestik)
+	{
+		player.second = '0';
+	}
+	else player.second = 'x';
+	cout << player.second << " " << player.fisrt;
+
+
+	cin.get();
+	cin.get();
+	return 0;
 }
 
-void BoardList()
+void BoardList(Doska doska)
 {
-    cout << endl << "Вид доски" << endl;
-    cout << Doska.kletka1 << " " << Doska.kletka2 << " " << Doska.kletka3 << endl;
-    cout << Doska.kletka4 << " " << Doska.kletka5 << " " << Doska.kletka6 << endl;
-    cout << Doska.kletka7 << " " << Doska.kletka8 << " " << Doska.kletka9 << endl;
+	cout << endl << "Вид доски" << endl;
+	cout << doska.kletka1 << " " << doska.kletka2 << " " << doska.kletka3 << endl;
+	cout << doska.kletka4 << " " << doska.kletka5 << " " << doska.kletka6 << endl;
+	cout << doska.kletka7 << " " << doska.kletka8 << " " << doska.kletka9 << endl;
 }
