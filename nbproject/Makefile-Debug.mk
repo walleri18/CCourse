@@ -52,7 +52,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/GL5/Practika6GL5.o \
 	${OBJECTDIR}/GL5/Practika7GL5.o \
 	${OBJECTDIR}/GL7/Practika1GL7.o \
-	${OBJECTDIR}/GL7/Practika2GL7.o
+	${OBJECTDIR}/GL7/Practika2GL7.o \
+	${OBJECTDIR}/Practika3GL7.o
 
 
 # C Compiler Flags
@@ -168,6 +169,11 @@ ${OBJECTDIR}/GL7/Practika2GL7.o: nbproject/Makefile-${CND_CONF}.mk GL7/Practika2
 	${MKDIR} -p ${OBJECTDIR}/GL7
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL7/Practika2GL7.o GL7/Practika2GL7.cpp
+
+${OBJECTDIR}/Practika3GL7.o: nbproject/Makefile-${CND_CONF}.mk Practika3GL7.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Practika3GL7.o Practika3GL7.cpp
 
 # Subprojects
 .build-subprojects:
