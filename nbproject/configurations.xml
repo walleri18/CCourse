@@ -33,6 +33,7 @@
       <logicalFolder name="f6" displayName="GL6" projectFiles="true">
       </logicalFolder>
       <logicalFolder name="f7" displayName="GL7" projectFiles="true">
+        <itemPath>KrectikiNoliki.cpp</itemPath>
         <itemPath>GL7/Practika1GL7.cpp</itemPath>
         <itemPath>GL7/Practika2GL7.cpp</itemPath>
         <itemPath>GL7/Practika3GL7.cpp</itemPath>
@@ -114,6 +115,8 @@
       <item path="GL7/Practika2GL7.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GL7/Practika3GL7.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="KrectikiNoliki.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

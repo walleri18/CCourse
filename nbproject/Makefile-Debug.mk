@@ -53,7 +53,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/GL5/Practika7GL5.o \
 	${OBJECTDIR}/GL7/Practika1GL7.o \
 	${OBJECTDIR}/GL7/Practika2GL7.o \
-	${OBJECTDIR}/GL7/Practika3GL7.o
+	${OBJECTDIR}/GL7/Practika3GL7.o \
+	${OBJECTDIR}/KrectikiNoliki.o
 
 
 # C Compiler Flags
@@ -174,6 +175,11 @@ ${OBJECTDIR}/GL7/Practika3GL7.o: nbproject/Makefile-${CND_CONF}.mk GL7/Practika3
 	${MKDIR} -p ${OBJECTDIR}/GL7
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL7/Practika3GL7.o GL7/Practika3GL7.cpp
+
+${OBJECTDIR}/KrectikiNoliki.o: nbproject/Makefile-${CND_CONF}.mk KrectikiNoliki.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/KrectikiNoliki.o KrectikiNoliki.cpp
 
 # Subprojects
 .build-subprojects:
