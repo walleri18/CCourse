@@ -35,7 +35,7 @@
       <logicalFolder name="f7" displayName="GL7" projectFiles="true">
         <itemPath>GL7/Practika1GL7.cpp</itemPath>
         <itemPath>GL7/Practika2GL7.cpp</itemPath>
-        <itemPath>Practika3GL7.cpp</itemPath>
+        <itemPath>GL7/Practika3GL7.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
@@ -113,7 +113,7 @@
       </item>
       <item path="GL7/Practika2GL7.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Practika3GL7.cpp" ex="false" tool="1" flavor2="0">
+      <item path="GL7/Practika3GL7.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
