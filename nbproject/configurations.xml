@@ -31,7 +31,6 @@
         <itemPath>GL5/Practika7GL5.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f6" displayName="GL6" projectFiles="true">
-        <itemPath>GL7/Practika1GL6.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f7" displayName="GL7" projectFiles="true">
       </logicalFolder>
@@ -107,8 +106,6 @@
       <item path="GL5/Practika6GL5.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GL5/Practika7GL5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="GL7/Practika1GL6.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GL7/Practika1GL7.cpp" ex="false" tool="1" flavor2="0">
       </item>

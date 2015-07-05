@@ -51,7 +51,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/GL5/Practika4GL5.o \
 	${OBJECTDIR}/GL5/Practika6GL5.o \
 	${OBJECTDIR}/GL5/Practika7GL5.o \
-	${OBJECTDIR}/GL7/Practika1GL6.o \
 	${OBJECTDIR}/GL7/Practika1GL7.o
 
 
@@ -158,11 +157,6 @@ ${OBJECTDIR}/GL5/Practika7GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika7
 	${MKDIR} -p ${OBJECTDIR}/GL5
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika7GL5.o GL5/Practika7GL5.cpp
-
-${OBJECTDIR}/GL7/Practika1GL6.o: nbproject/Makefile-${CND_CONF}.mk GL7/Practika1GL6.cpp 
-	${MKDIR} -p ${OBJECTDIR}/GL7
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL7/Practika1GL6.o GL7/Practika1GL6.cpp
 
 ${OBJECTDIR}/GL7/Practika1GL7.o: nbproject/Makefile-${CND_CONF}.mk GL7/Practika1GL7.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL7
