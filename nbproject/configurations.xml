@@ -43,7 +43,7 @@
         <itemPath>GL8/Practika2GL8.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f9" displayName="GL9" projectFiles="true">
-        <itemPath>Practika3GL9.cpp</itemPath>
+        <itemPath>GL9/Practika3GL9.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
@@ -129,7 +129,7 @@
       </item>
       <item path="GL8/Practika2GL8.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Practika3GL9.cpp" ex="false" tool="1" flavor2="0">
+      <item path="GL9/Practika3GL9.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
