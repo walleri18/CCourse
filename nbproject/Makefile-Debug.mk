@@ -51,10 +51,11 @@ OBJECTFILES= \
 	${OBJECTDIR}/GL5/Practika4GL5.o \
 	${OBJECTDIR}/GL5/Practika6GL5.o \
 	${OBJECTDIR}/GL5/Practika7GL5.o \
+	${OBJECTDIR}/GL7/KrectikiNoliki.o \
 	${OBJECTDIR}/GL7/Practika1GL7.o \
 	${OBJECTDIR}/GL7/Practika2GL7.o \
 	${OBJECTDIR}/GL7/Practika3GL7.o \
-	${OBJECTDIR}/KrectikiNoliki.o
+	${OBJECTDIR}/Practika1GL8.o
 
 
 # C Compiler Flags
@@ -161,6 +162,11 @@ ${OBJECTDIR}/GL5/Practika7GL5.o: nbproject/Makefile-${CND_CONF}.mk GL5/Practika7
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL5/Practika7GL5.o GL5/Practika7GL5.cpp
 
+${OBJECTDIR}/GL7/KrectikiNoliki.o: nbproject/Makefile-${CND_CONF}.mk GL7/KrectikiNoliki.cpp 
+	${MKDIR} -p ${OBJECTDIR}/GL7
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL7/KrectikiNoliki.o GL7/KrectikiNoliki.cpp
+
 ${OBJECTDIR}/GL7/Practika1GL7.o: nbproject/Makefile-${CND_CONF}.mk GL7/Practika1GL7.cpp 
 	${MKDIR} -p ${OBJECTDIR}/GL7
 	${RM} "$@.d"
@@ -176,10 +182,10 @@ ${OBJECTDIR}/GL7/Practika3GL7.o: nbproject/Makefile-${CND_CONF}.mk GL7/Practika3
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL7/Practika3GL7.o GL7/Practika3GL7.cpp
 
-${OBJECTDIR}/KrectikiNoliki.o: nbproject/Makefile-${CND_CONF}.mk KrectikiNoliki.cpp 
+${OBJECTDIR}/Practika1GL8.o: nbproject/Makefile-${CND_CONF}.mk Practika1GL8.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/KrectikiNoliki.o KrectikiNoliki.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Practika1GL8.o Practika1GL8.cpp
 
 # Subprojects
 .build-subprojects:

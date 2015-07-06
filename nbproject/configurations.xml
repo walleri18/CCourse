@@ -33,12 +33,13 @@
       <logicalFolder name="f6" displayName="GL6" projectFiles="true">
       </logicalFolder>
       <logicalFolder name="f7" displayName="GL7" projectFiles="true">
-        <itemPath>KrectikiNoliki.cpp</itemPath>
+        <itemPath>GL7/KrectikiNoliki.cpp</itemPath>
         <itemPath>GL7/Practika1GL7.cpp</itemPath>
         <itemPath>GL7/Practika2GL7.cpp</itemPath>
         <itemPath>GL7/Practika3GL7.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f8" displayName="GL8" projectFiles="true">
+        <itemPath>Practika1GL8.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
@@ -112,13 +113,15 @@
       </item>
       <item path="GL5/Practika7GL5.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="GL7/KrectikiNoliki.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="GL7/Practika1GL7.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GL7/Practika2GL7.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GL7/Practika3GL7.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="KrectikiNoliki.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Practika1GL8.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
