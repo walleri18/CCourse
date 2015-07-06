@@ -56,7 +56,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/GL7/Practika2GL7.o \
 	${OBJECTDIR}/GL7/Practika3GL7.o \
 	${OBJECTDIR}/GL8/Practika1GL8.o \
-	${OBJECTDIR}/Practika2GL8.o
+	${OBJECTDIR}/GL8/Practika2GL8.o
 
 
 # C Compiler Flags
@@ -188,10 +188,10 @@ ${OBJECTDIR}/GL8/Practika1GL8.o: nbproject/Makefile-${CND_CONF}.mk GL8/Practika1
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL8/Practika1GL8.o GL8/Practika1GL8.cpp
 
-${OBJECTDIR}/Practika2GL8.o: nbproject/Makefile-${CND_CONF}.mk Practika2GL8.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/GL8/Practika2GL8.o: nbproject/Makefile-${CND_CONF}.mk GL8/Practika2GL8.cpp 
+	${MKDIR} -p ${OBJECTDIR}/GL8
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Practika2GL8.o Practika2GL8.cpp
+	$(COMPILE.cc) -g -Wall -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GL8/Practika2GL8.o GL8/Practika2GL8.cpp
 
 # Subprojects
 .build-subprojects:

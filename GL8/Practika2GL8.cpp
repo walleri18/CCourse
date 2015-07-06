@@ -6,14 +6,20 @@
  */
 
 #include <cstdlib>
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
-
+int main()
+{
+    
+    srand(time(NULL));
+    
+    int chisloKomp = rand() % 101;
+    cout << chisloKomp << endl;
+    
     return 0;
 }
 
