@@ -6,169 +6,74 @@
  */
 
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <iostream>
+ static char *sot[]={"сто","двести","триста","четыреста",
+             "пят","шест", "сем","восем","девят" };
+ static char *desiat[]={" двадцать"," тридцать"," сорок"," пят"," шест",
+                " сем"," восем"," девяносто" };
+ static char *edm[]={""," один"," два"," три"," четыре"," пять"," шесть",
+             " семь"," восемь",
+             " девять"," десять"," один"," две"," три",
+             " четыр"," пят"," шест"," сем"," восем"," девят" };
+ static char *edw[]={" одна"," две" };
+ static char *nmtr[]={" тысяч"," миллион"," миллиард", " триллион",
+               " квадриллион", " квинтиллион", " сектиллион", " септаллион", NULL };
+         // дальше не знаю, м.б. товарищи подскажут ...
+ static char *nokm[]={"а","ов" };
+ static char *nokt[]={"а","и","" };
+/* ------------------ */
+Propis2(unsigned long L, int n, char *s) // Число прописью
+{ int R, ns, nd, r; char *p; unsigned long M;
  
-char *itonumeral_ru( int n, size_t size, char *buf );
+   M = L / 1000;
+   R = L % 1000;
+   if (M != 0) Propis2(M, n+1, s);  // Рекурсия!
+   if (R==0) return;
+   ns = R / 100;
+   if (ns)    sprintf(s+strlen(s), " %s", sot[ns-1]);
+   if (ns>=5) strcat(s, "ьсот");
+   R = R % 100;  // < 100
+   nd = R / 10;  // Десятки
+   if (nd >= 2) {
+      strcat(s, desiat[nd-2]);
+      if (nd>=5 && nd<=8) strcat(s, "ьдесят");
+      R = R % 10;
+   }
+   r = sklon(R);
+   if (n==1 && R>0 && R<3) p = edw[R-1];
+   else                    p = edm[R];
+   strcat(s, p);
+   if (R > 10) strcat(s, "надцать");
+   if (n > 0) {
+     strcat(s, nmtr[n-1]);
+     if     (n==1) strcat(s, nokt[r]);
+     else if (r>0) strcat(s, nokm[r-1]);
+   }
+}
+/*********************/
+sklon(int dd)    /* Определение склонения числа */
+{ int n, r;
  
-int main()
-{
-    char *str;
-    char *buf;
-    int choice;
-    while(1)
-    {
-        printf("Vvedite chislo:\t");
-        scanf("%u", &choice);
-        str = itonumeral_ru(choice, 256, buf);
-        printf("%s\n", str);
-    }
-    return 0;
+    r = 2;
+    n = dd % 100;
+    if (n>4 && n<20) return(r);
+    n = n % 10;
+    if      (n==1)       r = 0;
+    else if (n>1 && n<5) r = 1;
+    return(r);
 }
+/* ------------------ */
+long atol(char *b);
+main()
+{ char b[200], s[1000]; unsigned long L;
  
-char *itonumeral_ru( int n, size_t size, char *buf )
-{
-    char *one[] = {"","один ","два ","три ","четыре ","пять ","шесть ","семь ","восемь ","девять ",
-                  "десять ","одиннадцать ","двенадцать ","тринадцать ","четырнадцать ","пятнадцать ",
-                  "шестнадцать ","семнадцать ","восемнадцать ","девятнадцать " };
-    char *ten[] = {"","", "двадцать ", "тридцать ", "сорок ", "пятьдесят ", "шестьдесят ", "семьдесят ", 
-                  "восемьдесят ", "девяносто " };
-    char *hundred[] = {"","сто ","двести ", "триста ", "четыреста ", "пятьсот ", "шестьсот ", 
-                      "семьсот ", "восемьсот ", "девятьсот " };
-    char *thouOne[] =  {"","одна ","две ","три ","четыре ","пять ","шесть ","семь ","восемь ","девять ",
-                  "десять ","одиннадцать ","двенадцать ","тринадцать ","четырнадцать ","пятнадцать ",
-                  "шестнадцать ","семнадцать ","восемнадцать ","девятнадцать " };                     
-    char *thousand[] = {"тысяч ", "тысяча ", "тысячи ", "тысячи ", "тысячи ", "тысяч " ,"тысяч ", "тысяч ",
-                "тысяч ","тысяч ","тысяч ","тысяч ","тысяч ","тысяч ","тысяч ","тысяч ","тысяч ","тысяч ","тысяч "
-                "тысяч "};
-    buf = malloc(size);
-    sprintf(buf, "%u", n);
-    int len = strlen(buf);
-    int temp, temp2;
-        switch(len)
-{
-    case 1:
-        sprintf(buf,"%s", one[n]);
-        break;
-    case 2:
-        if(n < 20)
-        {
-            sprintf(buf,"%s", one[n]);
-        }
-        else if(n < 100)
-        {
-            if((n%10)==0) sprintf(buf,"%s", ten[n/10]);
-            else sprintf(buf,"%s%s", ten[n/10], one[n%10]);
-        }
-        break;
-    case 3:
-        temp = n/100;
-        n -= (n/100)*100;
-        if(n < 20)
-        {
-            sprintf(buf,"%s%s", hundred[temp], one[n]);
-            
-        }
-        else if(n < 100)
-        {
-            if((n%10)==0) sprintf(buf,"%s%s", hundred[temp], ten[n/10]);
-            else sprintf(buf,"%s%s%s", hundred[temp], ten[n/10], one[n%10]);
-        }
-        break;
-    case 4:
-        temp = n/1000;
-        n -= (n/1000)*1000;
-        sprintf(buf,"%s%s", thouOne[temp], thousand[temp]);
-        temp = n/100;
-        n -= (n/100)*100;
-        if(n < 20)
-        {
-            strncat(buf, hundred[temp], 30);
-            strncat(buf, one[n], 15);
-        }
-        else if(n < 100)
-        {
-            if((n%10)==0){
-                 strncat(buf, hundred[temp], 30);
-                 strncat(buf, ten[n/10], 30); 
-             }
-            else {
-                strncat(buf, hundred[temp], 30);
-                strncat(buf, ten[n/10], 30); 
-                strncat(buf, one[n%10], 30);
-            }
-        }
-        break;
-    case 5:
-        temp = n/1000;
-        n -= (n/1000)*1000;
-        if(temp<20){
-            sprintf(buf,"%s%s", thouOne[temp], thousand[temp%10]);
-        }
-        else if(temp < 100)
-        {
-            if((temp%10)==0) sprintf(buf,"%s%s", ten[temp/10], thousand[temp%10]);
-            else sprintf(buf,"%s%s%s", ten[temp/10], thouOne[temp%10], thousand[temp%10]);
-        }
-        temp = n/100;
-        n -= (n/100)*100;
-        if(n < 20)
-        {
-            strncat(buf, hundred[temp], 30);
-            strncat(buf, one[n], 30);
-            
-        }
-        else if(n < 100)
-        {
-            if((n%10)==0){
-                 strncat(buf, hundred[temp], 30);
-                 strncat(buf, ten[n/10], 30); 
-             }
-            else {
-                strncat(buf, hundred[temp], 30);
-                strncat(buf, ten[n/10], 30); 
-                strncat(buf, one[n%10], 30);
-            }
-        }
-        break;
-    case 6:
-        temp2 = n/1000;
-        n -= (n/1000)*1000;
-        
-        temp = temp2/100;
-        temp2 -=temp*100;
-        
-        if(temp2<20){
-            sprintf(buf,"%s%s%s", hundred[temp], thouOne[temp2], thousand[temp2]);
-        }
-        else if(temp2 < 100)
-        {
-            if((temp%10)==0) sprintf(buf,"%s%s%s",hundred[temp], ten[temp2/10], thousand[temp2%10]);
-            else sprintf(buf,"%s%s%s%s", hundred[temp],ten[temp2/10], thouOne[temp2%10], thousand[temp2%10]);
-        }
-        temp = n/100;
-        n -= (n/100)*100;
-        if(n < 20)
-        {
-            strncat(buf, hundred[temp], 30);
-            strncat(buf, one[n], 30);
-            
-        }
-        else if(n < 100)
-        {
-            if((n%10)==0){
-                 strncat(buf, hundred[temp], 30);
-                 strncat(buf, ten[n/10], 30); 
-             }
-            else {
-                strncat(buf, hundred[temp], 30);
-                strncat(buf, ten[n/10], 30); 
-                strncat(buf, one[n%10], 30);
-            }
-        }
-        break;
+a: printf(">");
+   gets(b);
+   if (strlen(b)==0) return;
+   s[0] = '\0';
+   L = atol(b);
+   Propis2(L, 0, s);
+   printf("%s\n", s);
+   goto a;
 }
-    
-    
-    return buf;                                
-}
+/**********************/
