@@ -38,6 +38,8 @@
         <itemPath>GL7/Practika2GL7.cpp</itemPath>
         <itemPath>GL7/Practika3GL7.cpp</itemPath>
       </logicalFolder>
+      <logicalFolder name="f8" displayName="GL8" projectFiles="true">
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Файлы заголовков"
